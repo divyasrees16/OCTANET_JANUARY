@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F6BE86;
+        }
+
+        header {
+            background-color: #8f4a06;
+            color:#f8f8f8;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Brush Script MT', cursive;
+        }
+        
+
+        section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .specials {
+            margin-top: 50px;
+            background-color: #8f4a06;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us {
+            margin-top: 50px;
+            background-color: #8f4a06;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color:#F4A797;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact-btn:hover {
+            background-color: #555;
+        }
+
+        .subscribe-form {
+            margin-top: 50px;
+            background-color:#8f4a06;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .subscribe-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-form input {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .subscribe-form button {
+            background-color:#333;
+            color:#F4A797;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .subscribe-form button:hover {
+            background-color:#F4A797;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Coffee House </h1>
+    </header>
+
+    <section>
+        <h2>Discover Our Delightful Atmosphere</h2>
+        <p>Experience the finest coffee and pastries in a cozy environment.</p>
+        <div class="gallery">
+            <div>
+                <img src="c_1.jpg" alt="Coffee 1">
+                <p>Start your day with our signature espresso blend - a perfect kick of energy and flavor.</p>
+            </div>
+            <div>
+                <img src="cf_2.jpg" alt="Coffee 2">
+                <p>Indulge in the richness of our carefully crafted cappuccino, a delight for coffee enthusiasts.</p>
+            </div>
+            <div>
+                <img src="c_3.jpg" alt="Pastry">
+                <p>Satisfy your sweet tooth with our freshly baked pastries - a heavenly treat for any occasion.</p>
+            </div>
+        </div>
+
+        <div class="specials">
+            <h2>Today's Specials</h2>
+            <p>Check out our daily specials crafted with love and creativity. Don't miss out on unique flavors!</p>
+        
+        </div>
+
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>At Coffee House, we are passionate about delivering exceptional coffee and pastries in a warm and inviting atmosphere. Our team is dedicated to providing a delightful experience for every customer.</p>
+        </div>
+        <br>
+        <br>
+        <a href="#contact" class="contact-btn">Contact Us</a>
+
+        <div class="subscribe-form" id="subscribe">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Coffee House . All rights reserved.
+    </footer>
+</body>
+
+</html>
